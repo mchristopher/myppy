@@ -179,7 +179,7 @@ class MyppyEnv(base.MyppyEnv):
                 # This is ridiculous, I should just parse out the version
                 # number and do a less-than check...
                 ok_versions = ("159.1.0", "88.3.10", "88.3.11", "111.1.7",
-                               "111.0.0")
+                               "111.0.0", "159.0.0")
                 for ok_version in ok_versions:
                     if "current version " + ok_version in link:
                         break
