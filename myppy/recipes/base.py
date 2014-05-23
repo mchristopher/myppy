@@ -514,7 +514,7 @@ class py_myppy(Recipe):
 
 
 class lib_wxwidgets_base(Recipe):
-    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/2.8.11.0/wxPython-src-2.8.11.0.tar.bz2"
+    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/3.0.0.0/wxPython-src-3.0.0.0.tar.bz2"
     CONFIGURE_ARGS = ("--with-opengl","--enable-unicode","--enable-optimize","--enable-debug_flag",)
     def _unpack(self):
         try:
@@ -528,13 +528,13 @@ class lib_wxwidgets_base(Recipe):
 
 class lib_wxwidgets_gizmos(lib_wxwidgets_base):
     DEPENDENCIES = ["lib_wxwidgets_base"]
-    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/2.8.11.0/wxPython-src-2.8.11.0.tar.bz2"
+    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/3.0.0.0/wxPython-src-3.0.0.0.tar.bz2"
     MAKE_RELPATH = "contrib/src/gizmos"
 
 
 class lib_wxwidgets_stc(lib_wxwidgets_base):
     DEPENDENCIES = ["lib_wxwidgets_base"]
-    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/2.8.11.0/wxPython-src-2.8.11.0.tar.bz2"
+    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/3.0.0.0/wxPython-src-3.0.0.0.tar.bz2"
     MAKE_RELPATH = "contrib/src/stc"
     
 
@@ -626,7 +626,7 @@ class lib_qt4(_lib_qt4_base):
 
 class py_wxpython(PyRecipe):
     DEPENDENCIES = ["lib_wxwidgets"]
-    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/2.8.11.0/wxPython-src-2.8.11.0.tar.bz2"
+    SOURCE_URL = "http://downloads.sourceforge.net/project/wxpython/wxPython/3.0.0.0/wxPython-src-3.0.0.0.tar.bz2"
     def install(self):
         self._generic_pyinstall(relpath="wxPython")
 
